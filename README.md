@@ -2,6 +2,8 @@
 
 You can visit my application deployed on Streamlit community cloud here
 [NBA Game Outcome Prediction] (https://prediction-of-nba-games.streamlit.app/)
+
+
 This project is a Streamlit application designed to predict NBA game outcomes using logistic regression. The model leverages various game statistics, such as field goal percentages, rebounds, assists, and turnovers, to determine the likelihood of a home team winning.
 
 ## Table of Contents
