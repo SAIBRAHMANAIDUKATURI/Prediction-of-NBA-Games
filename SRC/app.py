@@ -4,16 +4,18 @@ import numpy as np
 import sqlite3
 import pandas as pd
 from sklearn.metrics import log_loss
+from pathlib import Path
 
 # Load the model once, to avoid reloading it on each input change
 @st.cache_data
 def load_model():
-    with open('lr.pkl', 'rb') as file:
+    with open(Path(__file__).parent / 'lr.pkl', 'rb') as file:
         return pickle.load(file)
+
 
 @st.cache_data
 def load_model1():
-    with open('sc.pkl', 'rb') as file:
+    with open(Path(__file__).parent / 'sc.pkl', 'rb') as file:
         return pickle.load(file)
 
 lr = load_model()
