@@ -20,7 +20,8 @@ def load_model1():
 
 lr = load_model()
 sc = load_model1()
-con = sqlite3.connect('data2022.sqlite')
+db_path = Path(__file__).parent / 'data2022.sqlite'
+con = sqlite3.connect(db_path)
 
 # List of currently active NBA teams
 # List of currently active NBA teams
